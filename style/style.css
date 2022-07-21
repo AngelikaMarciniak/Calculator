@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #b0b2b4;
+}
+
+.Calculator {
+  margin: 25px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 70vh;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+button {
+  cursor: pointer;
+  border: 1px solid #333533;
+  outline: none;
+  background: #41413f;
+}
+button:hover, button:focus {
+  background: rgba(24, 24, 23, 0.95);
+}
+.result {
+  grid-column: 1 / -1;
+  background-color: #333533;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  box-shadow: 0px 4px 25px -10px  rgba(24, 24, 23, 0.95);
+}
+.last-action {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .8)
+}
+.update-action {
+  font-size: 30px;
+}
+.col-sec {
+  grid-column: span 2;
+}
+.row-sec {
+  grid-row: span 2;
+}
